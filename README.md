@@ -1,91 +1,116 @@
-# 심화 프로젝트 계획서
-김민지, 박수진, 심예주, 이수진, 양승찬
-프론트 : 리액트백 : 노드 익스프레스
+# README
 
-## 주제 찾기
+- 프로젝트 요약
 
-### **반려동물 플랫폼**
+  |              | 내용                                                         |
+  | ------------ | ------------------------------------------------------------ |
+  | 기한 및 인원 | 약 26일/ 5명                                                 |
+  | 주제         | 발품팔지 않고 바로 만나는 애니멀 닥터 : 동물병원 정보 공유 플랫폼 |
+  | 주요 기능    | 동물병원 및 리뷰 정보 제공, 영수증 자동 인식을 통한 편리하고 신뢰성있는 리뷰 작성 |
+  | 기술 스택    | Spring, MySQL, React, Kakao map api, google cloud vision, AWS EC2, S3 |
+  | 맡은 역할    | 팀장, 기획(공통), 데이터 수집 및 가공, 영수증 인증 기능, 프론트엔드, 디자인 |
+  | 결과물       | [발바닥 배포](www.balbadack.com) (공통) / [영수증 항목 추출 모듈](https://www.npmjs.com/package/@ming822/ocr-reciept-helper) (개인) |
 
- 간식? 병원(운영 정보)? 미용? 호텔? 유치원? 동물약국? 산책? https://play.google.com/store/apps/details?id=m.kr.gobeauty&hl=ko플레이스 커뮤니티 가격/평점(쇼핑몰/커뮤니티 크롤링)제품 추천
+  
 
-동물 보호 관리시스템https://www.animal.go.kr/front/index.do서울 동물 보호https://data.seoul.go.kr/dataList/369/S/2/datasetView.do동물약국http://anipharm.net/index.php?mid=fboard&category=14612
-경기도 보호 시설[https://data.gg.go.kr/portal/data/service/selectServicePage.do?page=1&sortColumn=&sortDirection=&infId=IFCTHC90596EV59Q861V1622341&infSeq=3&searchWord=%EC%9C%A0%EA%B8%B0%EB%8F%99%EB%AC%BC+%EB%B3%B4%ED%98%B8%EC%8B%9C%EC%84%A4+%ED%98%84%ED%99%A9](https://data.gg.go.kr/portal/data/service/selectServicePage.do?page=1&sortColumn=&sortDirection=&infId=IFCTHC90596EV59Q861V1622341&infSeq=3&searchWord=유기동물+보호시설+현황)
-참고 페이지 - 비마이펫[https://bemypet.kr/%EC%9C%A0%EA%B8%B0%EA%B2%AC-%EC%9E%85%EC%96%91/%EA%B0%95%EC%9D%B4%EC%A7%80-%EC%9E%84%EC%8B%9C%EB%B3%B4%ED%98%B8/](https://bemypet.kr/유기견-입양/강이지-임시보호/)
-참고 페이지 - 2 애니멀닥터http://animaldoctor.co.kr/ 
-참고페이지 - 모두닥 https://www.modoodoc.com/
-모두닥 노션 https://www.notion.so/e7d23aaafafd472da6b64c6bdacce3fd
-카카오 apihttps://developers.kakao.com/docs/latest/ko/local/dev-guide
-마이펫플러스 - 가격비교(중성화수술,)https://www.mypetplus.co.kr/
+- 발바닥은 www.balbadack.com 에서 만나보실 수 있습니다 :paw_prints:
 
-
-
-### 모든 웹툰을 넷플릭스마냥 추천
-
-해주고 (함께 볼 수 있는 플랫폼, +a).. 크롤링..?
-
-플랫폼별 : 다음 웹툰, 네이버 웹툰, 카카오 페이지, 레진 코믹스, 작가별취향별 검색 : contents based, collaborative, 분류 (인스타 돋보기처ㅓㄻ..)리뷰 : 댓글 필터링, 태그 자동 생성, 작품에대한 리뷰 남길 수 있게분야별 인기상웹툰 직접 보여주기 : iframe https://www.w3schools.com/html/html_iframe.asp(네이버, 다음 등에 직접 물어보기)https://steemit.com/kr/@lawyergt/5evnpe
-모두의 웹툰 https://play.google.com/store/apps/details?id=com.irongate.webtoon&hl=ko
+![](./img/bal1.png)
 
 
 
-### 홈트 코치
+## 0. 발바닥은?
 
- (feat. 모션 인식 api) (하이브리드앱)네이버 apihttps://www.ncloud.com/product/aiService/poseEstimation
-보통의 모션 인식https://www.google.com/search?q=pose+estimation&newwindow=1&sxsrf=ALeKk00PGcQUP6MtbSlTiTTfmAe0YraCSQ:1588749106490&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjmpoTR157pAhXJG6YKHe-FDcwQ_AUoAXoECA0QAw&biw=1438&bih=999
-ai hubhttp://www.aihub.or.kr/aidata/138
-무브미러 https://www.tensorflow.org/js여그 
-https://experiments.withgoogle.com/move-mirror동작 맞추기 게임, 홈트레이닝, 춤, 
-http://www.aitimes.kr/news/articleView.html?idxno=14460카카오-스마트홈트
-
-
-
-### 컬러링북 만들어주기
-
- - 사진 -> edge detection- 핸드폰 케이스로도 제작가능- 사진 -> 스타일 변환 -> edge detection- 색칠 어떻게 ..?	- 패드/노트 사용자	- 일반 사용자 : - 기존의 컬러링 북과의 차별점..?	- 공유 가능, (잘하는 사람들 작품)	- 선물용 앨범, 컬러링 포토북..?		- 애인, 친구 와 추억 포토북		- 아가를 위한 동화 만들기		- 라이브 드로잉 따라그리기?- edge detection
-삼성 라이브 팬업https://play.google.com/store/apps/details?id=com.sec.penup&hl=ko![img](https://lh3.googleusercontent.com/ogQ78-9cnJ6vC6atzbkahbCxVzkxK8IQPs2coI0M2WOQNDbjnczIIK9tNk0kXarotWXjuaFqxWN7pqJFxo0_wtnsyQAJG0fG2R_KOpJO92G_XUKpkn7yUr6GM_swrzyqR545HKhF)![img](https://lh4.googleusercontent.com/YkkUg10ta5CNLq8lqTkd8ay3h6qvkToS0C6eQOe6QerB26DcywdL7Hk90xMInQ9S0G_rlmXja1mLtpL5JMkQatbIe1wNwi1R6KOyK1m-O4QaOoDL7GOtUq0QglASoc4MPCzgFKxo)![img](https://lh4.googleusercontent.com/xQWHCPBUYhbXtxNkqP_L-ImyUOCCUpm-2fGfAr9CFYmJhrtsE5cCPKGNUp8lbKN4lql39DhchDEqHRCZXnjIl6zje76hHngk7FrXXOOtbyY7hpmSfrYxGnWpvXyvKXLDUz_XJEn6)
-https://play.google.com/store/apps/details?id=com.apalon.mandala.coloring.book&hl=ko![img](https://lh3.googleusercontent.com/52BHjCu-O9Qu6CsvDVvyJuVip7WQn5VX_gCzsulB1a3GmGuuU1PeHM5nGRuodW_s5IoM4NWF7gLYbb9Ora477rZ9pZNdXyfbEhJ0YZtZjrZYcyTSMS3LmxGRZLuhqLq4rWa_jKoA)
-
-### 시각장애인을 위한 게임
-
-https://m.thisisgame.com/webzine/game/nboard/16/?n=60280https://www.youtube.com/watch?v=RIbnsjc77wQ
-
-### 비슷한 판례 찾아주기
-
-### 악보를 찍으면 음악으로
+- **발**품팔지 않고 **바**로 만나는 애니멀 **닥**터 : 동물병원 정보 공유 플랫폼
+- 1000만 명이 넘는 반려인에도 불구하고 동물병원에 대한 정보를 찾기는 쉽지 않고 진료비 표준이 존재하지않아 항목에 따라 크게는 80배 가까이 진료비가 차이가 나기도 합니다.
+- 발바닥에서는
+  - 서울 지역의 동물병원의 정보와 함께
+  - **신뢰성 있는 동물병원 후기와 가격정보**를 공유할 수 있습니다.
+    - 핸드폰 인증을 통해 중복 리뷰를 방지하고
+    - **영수증 인증**을 통해 해당하는 동물 병원일 경우에만 가격 정보를 업로드 할 수 있습니다. 
+- 발바닥을 통해 
+  - **반려인**들은 편리하고 쉽게 동물병원 정보를 얻을 수 있고 자신의 진료 경험을 공유할 수 있음 
+  - **수의사**들은 기존의 정보의 비대칭 해소에 기여하고 본인의 동물병원을 홍보할 수 있음
 
 
 
-### 탈락한 아이디어
+## 1. 발바닥 가이드
+
+### 1. 늦은 시간 햄스터가 구토를 하고 있어요 ㅜㅠ
+
+- 저희 서비스의 메인 화면 Quick Search 버튼을 통해  내 주위 3Km 이내의 병원에서 별점 이 높은 순,  리뷰가 많은 순으로 정렬해서 확인할 수 있습니다.
+- 직접 '햄스터'나 '24시' 등의 키워드를 통해 저희가 리뷰를 텍스트 분석해서 달아둔 병원 태그를 이용해서원하는 정보만 검색할 수도 있습니다. 
+- 아래 지도 버튼을 클릭할 경우 지도에서 해당 병원의 위치도 확인할 수 있습니다.
+
+![발바닥 리뷰 및 병원 검색](./img/bal3.png)
 
 
 
-**옷 추천** - 옷들 사진 업로드, ai 옷 조합, 데이터 학습시키기…? (보류)fashion-guided clothing semantic parsing dataset옷의 부분별 추출추출된 옷 : 검색 또는 색깔 추천비슷한 옷
+### 2.혹시 리뷰를 작성했는데 애완동물한테 불이익이 갈까요ㅠ?
 
-**올리브영 매장별 할인 정보**/재고.. 데이터를 얻어올 방법이 없음 (패스)
+- 사용자들이 솔직하고 객관적인 리뷰를 마음껏 작성하실 수 있도록 철저한 익명보장을 위해 노력했습니다.
+- 리뷰에 닉네임이나 아이디가 전혀 노출되지 않고 상세 별점 이외의 방문 목적, 방문날짜, 작성자 모두 비공개처리되고 저희 데이터를 위해서만 이용됩니다.
+-  영수증 리뷰기능은 사용자들의 편의와 진료항목 확인용으로만 이용되기 때문에 병 원관계자들 페이지에 노출될 걱정 없이 편하게 이용하실 수 있습니다. 
+- 전체 진료항목과 가격은 병원 상세페이지에서 한 번에 보여주기 때문에 리뷰를 통해 작성자를 유추할 수도 없습니다
 
-부동산분석..? (패스)투자 (땅, 상가, 아파트)치킨집, 카페 성공률?빈집해당 날씨에 화창한 날씨의 **여행지 추천**.. 데이터 (패스)
-오르막길https://m.blog.naver.com/PostView.nhn?blogId=smfjjang&logNo=221226458337&proxyReferer=https:%2F%2Fwww.google.com%2F (다른 부가 기능 필요, 일단 보류)
-지역별 커뮤니티 -> 이사를 위한 (보류)
-**약속 지점 찾기**https://play.google.com/store/apps/details?id=com.ewhaappcenter.optimumappointmentplace&hl=ko (유클리드거리_카카오 : https://brunch.co.kr/@kakao-it/213 (기능거리, isomap)sklearn: https://scikit-learn.org/stable/modules/generated/sklearn.manifold.Isomap.html (isomap api) -PASS
+![](./img/bal2.png)
 
 
 
-## 프로젝트 계획서
 
-### 프로젝트 개요
 
-### 주제 선정 배경 및 시장 분석
+### 3. 과잉진료를 하지 않는 합리적인 병원을 찾고싶어요!
 
-### 목표
+- 마찬가지로 검색서비스에 '정직'이라는 키워드로 병원을 검색한다면 검색 결과 내의 다른 병 원과 평점을 비교할 수 있습니다.
 
-### 팀원별 담당 역할
+- 병원을 클릭하여 상세페이지에서 항목별로 가격을 체크할 수도 있습니다. 동물의 경우 같은 항목에 대해 진료를 받더라도 동물의 종류나 나이, 상태에 따라서 금액의 차이가 생기는 경우가 많기 때문에 동일 항목에 대해서도 각 동물 종류별로 사용자들이 직접 입력한 금 액을 범위로 표현하였습니다.
 
-### 개발 계획
+  
 
-### 일정 계획
+### 4.  저희 서비스가 수의사에겐 어떤 장점과 기대효과를 가져올까요? 
 
-### 개발 언어및 활용 기술
+1. **정직한 병원들이 손해보지 않는 플랫폼입니다.** 
+   영수증인증을 완료한 객관적인 리뷰들의 평점순, 개수가 많은 순으로 정렬이 가능하기 때문에 자연스럽게 정직한 병원들이 상위에 노출됩 니다. 
+2. **또한 사용자들이 악의적인 리뷰를 작성할 경우를 대비하여**
+   리뷰를 처음 작성하기 전 반드시 핸드폰으로 본인 인증을 마쳐야 하고,
+   OCR기반 영수증 인증을 도 입하여 리뷰의 신뢰도를 보장하였습니다. 
+   악의적인 비방글이 있을 경우 사용자들의 신고기능을 통 해 조치를 취할 수 있습니다.
 
-### 예산분석 및 설계요구사항 정의
 
-### 애플리케이션 아키텍처
+
+## 2. 기술 스택
+
+- **backend**
+  - spring
+  - MySQL
+- **frontend**
+  - react 웹 프레임워크
+  - 카카오 맵 api
+    - 병원 상세페이지
+    - 병원 검색페이지
+  - [구글 클라우드 vision api](https://cloud.google.com/vision/docs/ocr#vision_text_detection_gcs-nodejs)
+    - 영수증 인증시 ocr (optical character recognition) 활용
+    - [이후 알고리즘으로 ocr 결과에서 영수증 항목 추출](https://www.npmjs.com/package/@ming822/ocr-reciept-helper)
+  - AWS S3
+- **deploy**
+  - AWS EC2
+  - nginx
+
+<img src=".\img\bal4.jpg" style="zoom:50%;" />
+
+
+
+## 3. 개발 일정
+
+- 총 개발 기간 약 26일 (5/4 - 6/8)
+- **1주차** : 기획 및 설계
+- **2주차**: 개발환경 구축 및 데이터 수집
+- **3주차**
+  - 데이터 가공 및 영수증 인증 기능 구현 (ocr api + 영수증 항목 추출 알고리즘)
+  - 백엔드 & 프론트 엔드 개발
+- **4주차 & 5주차**
+  - 백엔드 & 프론트 엔드 개발
+- **6주차** : 서버 배포, 버그 픽스, 발표 준비
+
+<img src="./img/bal5.jpg" alt="image-20200615154824700" style="zoom:50%;" />
+
